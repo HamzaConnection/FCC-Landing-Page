@@ -1,0 +1,243 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /* The same as 10 px because default meaning 100% is 16 px it makes it easier to use rem*/
+  box-sizing: border-box; /* So that the width and height is the actual specified not including paddings borders*/
+  font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', 'Tahoma',
+    'Sans-Serif';
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  background-color: #eee;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6rem;
+}
+
+@media (max-width: 600px) {
+  #nav-bar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #hero {
+    padding-top: 20px;
+  }
+
+  .nav-link {
+    justify-content: space-between;
+    padding: 0 !important;
+    margin: 0 !important;
+    text-decoration: none;
+    color: black;
+  }
+}
+
+@media (max-width: 1000px) {
+  #header {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  #hero {
+    margin-top: 150px !important;
+  }
+
+  .feature i {
+    display: none;
+  }
+
+  .feature {
+    padding: 0 5rem;
+  }
+
+  .price-box {
+    width: 70% !important;
+  }
+
+  #pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+#header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  padding: 2.5rem;
+  overflow: auto;
+  background-color: #eee;
+  width: 100%;
+}
+
+#header-img {
+  width: 30rem;
+  height: 3rem;
+  max-width: 100%;
+  margin: 1rem;
+}
+
+.nav-link {
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  margin: 2rem 2rem;
+  text-decoration: none;
+  color: black;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 90px;
+}
+
+#features {
+  max-width: 100rem;
+  margin: 8rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feature {
+  display: flex;
+  justify-content: space-around;
+}
+
+.feature i {
+  align-self: center;
+  justify-content: center;
+  color: darkorange;
+  padding: 0 1rem;
+}
+
+.feature_description {
+  display: flex;
+  flex-direction: column;
+  width: 80rem;
+  padding: 1rem;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#howitworks {
+  display: flex;
+  margin: 10rem 2.5rem;
+  max-width: 100%;
+}
+iframe {
+  max-width: 100%;
+  width: 62rem;
+  max-height: 100%;
+  height: 32rem;
+  margin: auto;
+}
+
+#pricing {
+  display: flex;
+  justify-content: center;
+  margin: 10rem 2.5rem;
+  max-width: 100%;
+}
+
+.price-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  border: solid black thin;
+  border-radius: 0.5rem;
+  height: 100%;
+  width: 28rem;
+}
+
+.price-box h2 {
+  background-color: #ddd;
+  font-size: 1.5rem;
+  width: 100%;
+  padding: 1rem 0rem;
+  text-align: center;
+}
+
+.price-box p {
+  padding: 1rem;
+}
+
+.price {
+  font-weight: 900;
+  font-size: 2rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+#pricing li {
+  list-style-type: none;
+}
+
+#email {
+  display: block;
+  width: 27.5rem;
+  max-width: 100%;
+  padding: 0.45rem;
+  margin: 1.5rem;
+}
+
+#submit,
+#select {
+  background-color: #f1c40f;
+  border: none;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  width: 15rem;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+#select {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  width: 10rem;
+  padding: 1.5rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #ddd;
+  align-items: center;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+footer li {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+footer li a {
+  text-decoration: none;
+  color: black;
+}
